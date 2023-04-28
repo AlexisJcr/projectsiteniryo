@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icons/bras-robotise.png">
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script defer src="script.js"></script>
+  <title>Homepage | Niryo Ned²</title>
+</head> 
+
+<body>
+
+  <div class="nav-container">
+    <a href="eng_accueil.html"><img class="navbar-logo" src="assets/icons/logo-niryo-noir.png"></a>
+
+    <!-- Menu Burger -->
+    <div class="navbar-burger-items" id="burger-items">
+      <ul>
+        <li>
+          <a href="eng_accueil.html" class="burger-btn">Homepage</a>
+        </li>
+        <li>
+          <a href="eng_documentation.html" class="burger-btn">Documentation</a>
+        </li>
+        <li>
+          <a href="eng_informations.html" class="burger-btn">Resources</a>
+        </li>
+        <li>
+          <a href="index.html"><img src="assets/icons/flag-fr.png" class="flag-unit"></a>
+          <a href="eng_accueil.html"><img src="assets/icons/flag-uk.png" class="flag-unit"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-burger">
+
+      <label class="burger" for="button-burger"><img src="assets/icons/menu.png" class="img-burger"></label>
+      <button id="button-burger" onclick="burgerclic()"></button>
+
+    </div>
+
+    <nav class="navbar-items">
+      <ul>
+        <li class="button-nav">
+          <a href="eng_accueil.html">Homepage</a>
+        </li>
+        <li class="button-nav">
+          <a href="eng_documentation.html">Documentation</a>
+        </li>
+        <li class="button-nav">
+          <a href="eng_informations.html">Resources</a>
+
+        </li>
+      </ul>
+    </nav>
+
+    <div class="navbar-search">
+      <input type="search" placeholder="Search" class="navbar-search">
+
+      <div class="flags">
+        <a href="index.html"><img src="assets/icons/flag-fr.png" class="flag-unit"></a>
+        <a href="eng_accueil.html"><img src="assets/icons/flag-uk.png" class="flag-unit"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CAROUSEL -->
+  <div class="carousel-container">
+    <div class="card-carousel">
+      <div class="card" id="1">
+        <div class="image-container"></div>
+      </div>
+      <div class="card" id="2">
+        <div class="image-container"></div>
+      </div>
+      <div class="card" id="3">
+        <div class="image-container"></div>
+      </div>
+      <div class="card" id="4">
+        <div class="image-container"></div>
+      </div>
+      <div class="card" id="5">
+        <div class="image-container"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Paragraphe de Présentation -->
+
+  <div class="presentation">
+    <p>The robot which is presented above is the Niryo Ned² Robot, produced by the company Niryo.
+      This robot is equiped with a six-axis robot arm and is dedicated to education, research and industry 4.0.<br>
+      <br>
+      Ned² is designed to reproduce use cases in the industrial environment.<br>
+      It allows students to take control and study a robot that could be in a production line<br>
+      With its sensors and its camera, it will be able to grab objects and move them to prepared places. <br>
+      <br>
+      Delivered with its conveyor and its work area, the robot is the optimal solution to discover, learn and
+      prototyping Industry 4.0 processes.<br>
+    </p>
+  </div>
+
+  <!-- Cercles d'informations -->
+
+  <div class="container2">
+    <div class="parent-circle">
+      <div class="circle">
+        <div class="circle-content">
+          <h1>Supply</h1>
+          <p>DC: 12V - 7A ; 5V- 7A</p>
+          <img src="assets/icons/plug.png" class="bubble-icon">
+        </div>
+      </div>
+
+      <div class="circle">
+        <div class="circle-content">
+          <h1>Max Weight</h1>
+          <p>300 Grammes</p>
+          <img src="assets/icons/charge.png" class="bubble-icon">
+        </div>
+      </div>
+
+      <div class="circle">
+        <div class="circle-content">
+          <h1>Reach</h1>
+          <p>240 mm soit 24 cm</p>
+          <img src="assets/icons/metre.png" class="bubble-icon">
+        </div>
+      </div>
+
+      <div class="circle">
+        <div class="circle-content">
+          <h1>Mass</h1>
+          <p>6,2 Kg</p>
+          <img src="assets/icons/lester.png" class="bubble-icon">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vidéo -->
+  <div class="video-background">
+    <div class="video-container">
+      <video autoplay controls muted loop src="assets/videos/video.mp4"></video>
+    </div>
+  </div>
+
+</body>
+
+<!-- Bas de Page -->
+
+<footer>
+  <div class="footer-credits">
+    <p>Website developed by Alexis JONCOUR | Cholan SCHEERS | Maxime RIOU | © 2023</p>
+  </div>
+</footer>
+
+</html>
+
+
+<script>
+  window.addEventListener('load', function() {
+    // Fonction pour changer la couleur de fond de .nav-container
+    function changeColor() {
+      var navContainer = document.querySelector('.nav-container');
+      var bubblecontainer = document.querySelector('.container2');
+      var backgroundvideo = document.querySelector('.video-background')
+      var footer = document.querySelector('.footer-credits')
+      navContainer.style.background = "linear-gradient(to right, #990012, #7a000e, #6b000c)";
+      bubblecontainer.style.background = "linear-gradient(to right, #990012, #7a000e, #6b000c)";
+      backgroundvideo.style.backgroundImage = "url(assets/photos/background-rouge.png)";
+      footer.style.background = "linear-gradient(to right, #990012, #7a000e, #6b000c)";
+
+    }
+  
+    // Appel de la fonction pour changer la couleur de fond de .nav-container
+    changeColor();
+  });
+</script> 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icons/bras-robotise.png"> <!-- Logo de la page web -->
+  <link href="style3.css" rel="stylesheet" type="text/css"/>
+  <script defer src="script.js"></script>
+  <title>Informations | Nyrio Ned²</title> <!-- Titre de la page web -->
+</head>
+
+<body>
+
+  <div class="nav-container">
+    <a href="index.html"><img class="navbar-logo" src="assets/icons/logo-niryo.png"></a>
+
+    <!-- Menu Burger -->
+    <div class="navbar-burger-items" id="burger-items">
+      <ul>
+        <li>
+          <a href="index.html" class="burger-btn">Accueil</a>
+        </li>
+        <li>
+          <a href="documentation.html" class="burger-btn">Documentation</a>
+        </li>
+        <li>
+          <a href="informations.html" class="burger-btn">Informations</a>
+        </li>
+        <li>
+          <a href="informations.html"><img src="assets/icons/flag-fr.png" class="flag-unit"></a>
+          <a href="eng_informations.html"><img src="assets/icons/flag-uk.png" class="flag-unit"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-burger">
+
+      <label class="burger" for="button-burger"><img src="assets/icons/menu.png" class="img-burger"></label>
+      <button id="button-burger" onclick="burgerclic()"></button>
+
+    </div>
+
+    <nav class="navbar-items">
+      <ul>
+        <li class="button-nav">
+          <a href="index.html">Accueil</a>
+        </li>
+        <li class="button-nav">
+          <a href="documentation.html">Documentation</a>
+        </li>
+        <li class="button-nav">
+          <a href="informations.html">Informations</a>
+
+        </li>
+      </ul>
+    </nav>
+
+    <div class="navbar-search">
+      <input type="search" placeholder="Rechercher" class="navbar-search">
+
+      <div class="flags">
+        <a href="informations.html"><img src="assets/icons/flag-fr.png" class="flag-unit"></a>
+        <a href="eng_informations.html"><img src="assets/icons/flag-uk.png" class="flag-unit"></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="slided">
+    <div class="container">
+
+      <!-- Première slide présentant l'entreprise Niryo-->
+      <div class="item">
+        <h2>Site de Niryo</h2>
+        <p>
+          <br>Nyrio est une entreprise créant des robots pour l'industrie 4.0. <br>
+          Ils sont les créateurs du robot Ned et Ned², ce dernier étant présenté sur cette page web. <br>
+          Leur méthode éducative pour apprendre au mieux l'industrie 4.0 est très pédagogue. <br>
+        </p>
+        <h4>Lien pour les sites Niryo</h4>
+        <p>Cliquez ici pour accéder au site <a id="item-1" href="https://niryo.com/fr/" target="_blank">
+            Niryo.com</a></p>
+        <p>Cliquez ici pour accéder à la présentation de <a id="item-1"
+            href="https://niryo.com/fr/solution-robotique-education-recherche/ned2-robot-education/" target="_blank">
+            Ned²</a></p>
+        <a href="https://niryo.com/fr/"><img src="assets/icons/logo-niryo2.png" class="imgm1"></a>
+      </div>
+
+      <!-- Deuxième slide présentant le projet de Gwendal-->
+      <div class="item">
+        <h2>Projet Gwendal Troadec</h2>
+        <p>
+          <br>Gwendal a eu comme projet l'installation de ROS (Robot Operating System). <br>
+          ROS permet de simuler le robot Ned². <br>
+          La simulation permet aussi de gérer les conditions environnementales autour du robot. <br>
+          Il permet également de faire des tests de simulation pour éviter tout dommage matériel sur le robot.
+          <br> <br>
+          Sur la page ci-dessous, Gwendal a rédigé les instructions d'installation de ROS.
+        </p>
+        <h4>Lien pour le site de Gwendal</h4>
+        <p>Cliquez ici pour accéder au site <a id="item-2" href="https://gw8ndal.github.io/posts/ros/" target="_blank">
+            Blog</a></p>
+      </div>
+
+      <!-- Troisième slide présentant les problèmes pouvant être rencontrés-->
+      <div class="item">
+        <h2>Problèmes rencontrés</h2>
+        <p>
+          <br>Sur la page proposée, tous les problèmes pouvant être rencontrés y sont présentés. <br>
+          Cela permet de savoir à quoi correspond les codes erreurs pouvant être rencontrés durant
+          l'utilisation du robot. <br>
+          <br>
+        </p>
+        <h4>Lien pour voir les erreurs</h4>
+        <p>Cliquez ici pour accéder au site <a id="item-3"
+            href="https://niryo.com/docs/niryo-one/assembly-guide/possible-issues/#pll_switcher" target="_blank">
+            Possible-Issues</a></p>
+        <a href="https://niryo.com/docs/niryo-one/assembly-guide/possible-issues/#pll_switcher" target="_blank"><img
+            src="assets/icons/logo-niryo2.png" class="imgm1"></a>
+      </div>
+
+      <!-- Quatrième slide présentant La Croix Rouge-->
+      <div class="item">
+        <h2>La Croix Rouge - La Salle</h2>
+        <p>
+          <br>Notre BTS SN devient maintenant le BTS CIEL.<br>
+          Cybersécurité Informatique et réseaux, Electronique.<br>
+          Pour découvrir toutes les modifications de cette réforme,<br>
+          La Croix Rouge vous propose une explication de cette nouvelle filière.<br>
+        </p>
+        <h4>Lien pour visiter le site de La Croix Rouge</h4>
+        <p>Cliquez ici pour accéder au site <a id="item-4"
+            href="https://www.lacroixrouge-brest.fr/ecoles-formations/enseignement-superieur/bts-systemes-numeriques/"
+            target="_blank"> BTS CIEL</a></p>
+        <a href="https://www.lacroixrouge-brest.fr/ecoles-formations/enseignement-superieur/bts-systemes-numeriques/"
+          target="_blank"> <img src="assets/icons/lasalle2019.png" class="imgm2"> </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- Footer présentant les élèves du projet -->
+<footer>
+  <div class="footer-credits">
+    <p>Site Développé par Alexis JONCOUR | Cholan SCHEERS | Maxime RIOU | © 2023</p>
+  </div>
+</footer>
+
+</html>

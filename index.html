@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icons/bras-robotise.png">
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script defer src="script.js"></script>
+  <title>Accueil | Niryo Ned²</title>
+</head>
+
+<body>
+  <!-- Barre de Navigation -->
+  <div class="nav-container">
+    <a href="index.html"><img class="navbar-logo" src="assets/icons/logo-niryo.png"></a>
+
+    <!-- Menu Burger -->
+    <div class="navbar-burger-items" id="burger-items">
+      <ul>
+        <li>
+          <a href="index.html" class="burger-btn">Accueil</a>
+        </li>
+        <li>
+          <a href="documentation.html" class="burger-btn">Documentation</a>
+        </li>
+        <li>
+          <a href="informations.html" class="burger-btn">Informations</a>
+        </li>
+        <li>
+          <a href="accueil.html"><img src="assets/icons/flag-fr.png" class="flag-unit"></a>
+          <a href="eng_accueil.html"><img src="assets/icons/flag-uk.png" class="flag-unit"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-burger">
+
+      <label class="burger" for="button-burger"><img src="assets/icons/menu.png" class="img-burger"></label>
+      <button id="button-burger" onclick="burgerclic()"></button>
+
+    </div>
+
+    <nav class="navbar-items">
+      <ul>
+        <li class="button-nav">
+          <a href="index.html">Accueil</a>
+        </li>
+        <li class="button-nav">
+          <a href="documentation.html">Documentation</a>
+        </li>
+        <li class="button-nav">
+          <a href="informations.html">Informations</a>
+
+        </li>
+      </ul>
+    </nav>
+
+    <div class="navbar-search">
+      <input type="search" placeholder="Rechercher" class="navbar-search">
+
+      <div class="flags">
+        <a href="index.html"><img src="assets/icons/flag-fr.png" class="flag-unit"></a>
+        <a href="eng_accueil.html"><img src="assets/icons/flag-uk.png" class="flag-unit"></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  
+
+
+  <!-- CAROUSEL -->
+  <div class="carousel-container">
+    <div class="card-carousel">
+      <div class="card" id="1">
+        <div class="image-container"></div>
+      </div>
+      <div class="card" id="2">
+        <div class="image-container"></div>
+      </div>
+      <div class="card" id="3">
+        <div class="image-container"></div>
+      </div>
+      <div class="card" id="4">
+        <div class="image-container"></div>
+      </div>
+      <div class="card" id="5">
+        <div class="image-container"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Paragraphe de Présentation -->
+
+  <div class="presentation">
+    <p>Le robot présenté ci-dessus est le Robot Ned², produit par la société Niryo.
+      Ce robot composé d'un bras robot de six axes, est dédié à l'éducation, à la recherche et à l'industrie 4.0.<br>
+      <br>
+      Ned² est conçu pour reproduire des cas d'utilisation dans le milieu industriel.<br>
+      Il permet aux élèves de prendre en main un robot qui pourrait très bien se trouver dans une chaîne de
+      production.<br>
+      Avec ses capteurs et sa caméra, il pourra saisir des objets et les déplacer dans les lieux préparés à leur
+      disposition.<br>
+      <br>
+      Livré avec son convoyeur et sa zone de travail, le robot est la solution optimale pour découvrir, apprendre et
+      prototyper les processus de l’industrie 4.0.<br>
+    </p>
+  </div>
+
+  <!-- Cercles d'informations -->
+
+  <div class="container2">
+    <div class="parent-circle">
+      <div class="circle">
+        <div class="circle-content">
+          <h1>Alimentation</h1>
+          <p>DC: 12V - 7A ; 5V- 7A</p>
+          <img src="assets/icons/plug.png" class="bubble-icon">
+        </div>
+      </div>
+
+      <div class="circle">
+        <div class="circle-content">
+          <h1>Charge</h1>
+          <p>300 Grammes</p>
+          <img src="assets/icons/charge.png" class="bubble-icon">
+        </div>
+      </div>
+
+      <div class="circle">
+        <div class="circle-content">
+          <h1>Portée</h1>
+          <p>240 mm soit 24 cm</p>
+          <img src="assets/icons/metre.png" class="bubble-icon">
+        </div>
+      </div>
+
+      <div class="circle">
+        <div class="circle-content">
+          <h1>Masse</h1>
+          <p>6,2 Kg</p>
+          <img src="assets/icons/lester.png" class="bubble-icon">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vidéo -->
+  <div class="video-background">
+    <div class="video-container">
+      <iframe src="https://drive.google.com/file/d/1jQAbR2l9APi9lR2tzF5H7ZdxjHrDEw4_/preview" width="955" height="636" allow="autoplay"></iframe>
+    </div>
+  </div>
+
+</body>
+
+<!-- Bas de Page -->
+
+<footer>
+  <div class="footer-credits">
+    <p>Site Développé par Alexis JONCOUR | Cholan SCHEERS | Maxime RIOU | © 2023</p>
+  </div>
+</footer>
+
+</html>
